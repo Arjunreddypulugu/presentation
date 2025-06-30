@@ -1,0 +1,285 @@
+{
+  "project_overview": {
+    "title": "Predictive Maintenance for Van Dyk Recycling Solutions",
+    "subtitle": "Transforming After-Sales Service & Customer Satisfaction",
+    "roi_potential": "10x return on investment",
+    "implementation_timeline": "6-12 months",
+    "key_benefits": [
+      "Up to 75% reduction in unplanned downtime",
+      "30% reduction in maintenance costs",
+      "20-40% extension of equipment lifespan",
+      "Improved customer satisfaction & service response"
+    ]
+  },
+  "business_value": {
+    "before_after": {
+      "before": {
+        "downtime": "Unplanned equipment failures",
+        "costs": "Reactive maintenance (expensive emergency repairs)",
+        "customer_impact": "Frustrated customers with production delays",
+        "service_allocation": "Inefficient resource deployment",
+        "reputation": "Service calls based on complaints"
+      },
+      "after": {
+        "downtime": "Predictable maintenance windows",
+        "costs": "Proactive maintenance (planned & cost-effective)",
+        "customer_impact": "Satisfied customers with reliable operations",
+        "service_allocation": "Optimized technician deployment",
+        "reputation": "Proactive service excellence"
+      }
+    },
+    "financial_impact": {
+      "maintenance_cost_reduction": "30%",
+      "downtime_reduction": "75%",
+      "equipment_lifespan_extension": "20-40%",
+      "service_efficiency_improvement": "50%"
+    }
+  },
+  "data_points": {
+    "historical_data": {
+      "name": "Historical Data - Foundation",
+      "description": "Essential baseline information for predictive algorithms",
+      "sensors": [
+        {
+          "type": "Service History",
+          "description": "Complete maintenance records and interventions",
+          "business_value": "Identifies patterns and failure modes"
+        },
+        {
+          "type": "Installation Records",
+          "description": "Equipment age, configuration, and setup details",
+          "business_value": "Establishes equipment lifecycle context"
+        },
+        {
+          "type": "Past Failures",
+          "description": "Historical breakdown events and root causes",
+          "business_value": "Enables failure pattern recognition"
+        },
+        {
+          "type": "Resolution Records",
+          "description": "Previous repair methods and effectiveness",
+          "business_value": "Optimizes future maintenance strategies"
+        }
+      ]
+    },
+    "sensor_data": {
+      "name": "Sensor Data - Real-time",
+      "description": "Live equipment condition monitoring",
+      "sensors": [
+        {
+          "type": "Temperature Sensors",
+          "description": "Monitor motor and bearing temperatures",
+          "business_value": "Prevents overheating failures"
+        },
+        {
+          "type": "Vibration Sensors",
+          "description": "Detect mechanical imbalances and wear",
+          "business_value": "Early warning for mechanical issues"
+        },
+        {
+          "type": "Pressure Sensors",
+          "description": "Monitor hydraulic and pneumatic systems",
+          "business_value": "Prevents system pressure failures"
+        },
+        {
+          "type": "Current/Voltage Sensors",
+          "description": "Electrical system health monitoring",
+          "business_value": "Detects electrical component degradation"
+        }
+      ]
+    },
+    "operational_data": {
+      "name": "Operational Data - Performance",
+      "description": "Equipment performance and usage patterns",
+      "sensors": [
+        {
+          "type": "Runtime Hours",
+          "description": "Total equipment operating time",
+          "business_value": "Schedules usage-based maintenance"
+        },
+        {
+          "type": "Throughput Data",
+          "description": "Material processing volumes and rates",
+          "business_value": "Correlates load with wear patterns"
+        },
+        {
+          "type": "Load Conditions",
+          "description": "Equipment stress and workload monitoring",
+          "business_value": "Predicts load-related failures"
+        },
+        {
+          "type": "Performance Metrics",
+          "description": "Efficiency and output quality measurements",
+          "business_value": "Identifies performance degradation trends"
+        }
+      ]
+    },
+    "environmental_data": {
+      "name": "Environmental Data - Context",
+      "description": "External factors affecting equipment performance",
+      "sensors": [
+        {
+          "type": "Ambient Temperature",
+          "description": "Operating environment temperature",
+          "business_value": "Accounts for thermal stress factors"
+        },
+        {
+          "type": "Humidity Levels",
+          "description": "Moisture content in operating environment",
+          "business_value": "Prevents corrosion and electrical issues"
+        },
+        {
+          "type": "Dust/Contamination",
+          "description": "Particulate matter and contamination levels",
+          "business_value": "Protects sensitive components"
+        },
+        {
+          "type": "Air Quality",
+          "description": "Overall environmental conditions",
+          "business_value": "Ensures optimal operating conditions"
+        }
+      ]
+    }
+  },
+  "algorithms": {
+    "anomaly_detection": {
+      "name": "Anomaly Detection",
+      "description": "Identifies unusual patterns in equipment behavior",
+      "techniques": [
+        {
+          "name": "Statistical Methods",
+          "description": "Z-score analysis and moving averages for threshold-based detection",
+          "use_case": "Simple deviation detection from normal operating parameters"
+        },
+        {
+          "name": "Machine Learning Models",
+          "description": "Autoencoders and isolation forests for complex pattern recognition",
+          "use_case": "Advanced anomaly detection without manual threshold setting"
+        },
+        {
+          "name": "Hybrid Approaches",
+          "description": "Combines rule-based systems with ML models",
+          "use_case": "Reduces false positives while maintaining sensitivity"
+        }
+      ]
+    },
+    "predictive_models": {
+      "name": "Predictive Models",
+      "description": "Forecasts equipment failures and remaining useful life",
+      "techniques": [
+        {
+          "name": "Random Forest",
+          "description": "Ensemble method for robust failure classification",
+          "use_case": "High accuracy with mixed data types and minimal preprocessing"
+        },
+        {
+          "name": "XGBoost",
+          "description": "Gradient boosting for regression and classification tasks",
+          "use_case": "Excellent performance on structured datasets with feature importance"
+        },
+        {
+          "name": "CNN-LSTM Hybrid",
+          "description": "Deep learning for time-series pattern recognition",
+          "use_case": "Complex multi-variate time-series forecasting"
+        }
+      ]
+    }
+  },
+  "proactive_steps": {
+    "resource_optimization": {
+      "name": "Service Resource Optimization",
+      "actions": [
+        "Dynamic technician scheduling based on predicted failures",
+        "Intelligent parts inventory management",
+        "Geographic service route optimization",
+        "Skill-based technician assignment"
+      ],
+      "business_impact": "50% improvement in service efficiency"
+    },
+    "downtime_planning": {
+      "name": "Planned Downtime Optimization",
+      "actions": [
+        "Coordinate maintenance with production schedules",
+        "Batch multiple maintenance tasks",
+        "Optimize maintenance windows during low-demand periods",
+        "Provide advance notice to customers"
+      ],
+      "business_impact": "Minimize production disruption and maximize customer satisfaction"
+    },
+    "customer_communication": {
+      "name": "Proactive Customer Communication",
+      "actions": [
+        "Early warning systems for potential issues",
+        "Maintenance scheduling collaboration",
+        "Performance trend reporting",
+        "Preventive action recommendations"
+      ],
+      "business_impact": "Enhanced customer relationships and trust"
+    }
+  },
+  "success_stories": [
+    {
+      "company": "Tetra Pak",
+      "industry": "Food Packaging",
+      "achievement": "Saved customer 140+ hours of downtime through predictive failure detection",
+      "technology": "Cloud-based data analysis with global sensor networks",
+      "business_value": "Reduced transportation costs and improved customer reliability"
+    },
+    {
+      "company": "TSR Recycling",
+      "industry": "Metal Recycling",
+      "achievement": "Implemented CytroConnect PREDICT system with machine learning",
+      "technology": "Rule and data-based analyses for hydraulic equipment",
+      "business_value": "Prevented production downtimes and reduced maintenance costs"
+    },
+    {
+      "company": "Industrial Manufacturing",
+      "industry": "General Manufacturing",
+      "achievement": "Achieved 91% uptime through comprehensive PdM program",
+      "technology": "Integrated sensor monitoring and predictive analytics",
+      "business_value": "Millions in prevented unplanned downtime costs"
+    }
+  ],
+  "implementation_timeline": {
+    "phase_1": {
+      "name": "Assessment & Planning",
+      "duration": "4-6 weeks",
+      "activities": [
+        "Equipment inventory and criticality analysis",
+        "Historical data collection and cleaning",
+        "Sensor requirement identification",
+        "Team formation and training planning"
+      ]
+    },
+    "phase_2": {
+      "name": "Pilot Implementation",
+      "duration": "8-12 weeks",
+      "activities": [
+        "Sensor installation on critical equipment",
+        "Data collection infrastructure setup",
+        "Basic analytics platform deployment",
+        "Initial model training and validation"
+      ]
+    },
+    "phase_3": {
+      "name": "Model Development",
+      "duration": "8-10 weeks",
+      "activities": [
+        "Advanced algorithm development",
+        "Predictive model training and testing",
+        "Integration with existing systems",
+        "Performance validation and tuning"
+      ]
+    },
+    "phase_4": {
+      "name": "Full Deployment",
+      "duration": "6-8 weeks",
+      "activities": [
+        "System-wide sensor deployment",
+        "Complete model integration",
+        "Staff training and process optimization",
+        "Performance monitoring and refinement"
+      ]
+    }
+  }
+}

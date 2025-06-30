@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRF Audit & Testing Center Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Page 1: Project Overview -->
+    <main id="overview-page" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="https://vdrs.com/wp-content/uploads/2024/10/Van-Dyk_Testing-Center-Norwalk-CT-1568x428.jpg" alt="Materials Recovery Facility Interior" class="hero-bg">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">MRF & testing center experience</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Timeline -->
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-animate="fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Testing Center Work</h3>
+                            <p>Hands-on material testing sessions with Paul, learning about MSW flow and machinery operations</p>
+                            <img src="https://vdrs.com/wp-content/uploads/2020/10/3-Test-Center-700.jpg" alt="Republic Services Testing Equipment" class="timeline-image">
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-animate="fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Murphy Road Recycling Berlin & Bridgeport</h3>
+                            <p>First-time MRF experience, material collection for comprehensive testing analysis</p>
+                            <img src="https://i0.wp.com/sanantonioreport.org/wp-content/uploads/2019/11/BonnieArbittier_republic_services_recycling_center_san_antonio_trash_recycle_dispose_waste_11-22-2019-14.jpg?fit=1200%2C800&ssl=1" alt="MRF Workers Sorting Materials" class="timeline-image">
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-animate="fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Mock Audit for Republic Services</h3>
+                            <p>Processed MSW through the sort system, separating materials like OCC and ONP to calculate weights and verify sorting purity.</p>
+                            <img src="https://smashmytrash.com/wp-content/uploads/2024/10/iStock-1426841984-scaled-1-scaled.jpg" alt="MRF Processing Systems" class="timeline-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Insights -->
+        <section class="insights-section">
+            <div class="container">
+                <h2 class="section-title">Key Learning Outcomes</h2>
+                <div class="insights-grid">
+                    <div class="insight-item" data-animate="scale-in">
+                        <div class="insight-number">01</div>
+                        <h3>Systematic Material Testing</h3>
+                        <p>Developed comprehensive understanding of systematic material testing methodologies used in industry standards</p>
+                    </div>
+                    <div class="insight-item" data-animate="scale-in">
+                        <div class="insight-number">02</div>
+                        <h3>MRF Operations</h3>
+                        <p>First hands-on experience in Materials Recovery Facility operational environment and workflow understanding</p>
+                    </div>
+                    <div class="insight-item" data-animate="scale-in">
+                        <div class="insight-number">03</div>
+                        <h3>MSW Flow Analysis</h3>
+                        <p>Gained expertise in Municipal Solid Waste flow analysis and specific recycling machine operations</p>
+                    </div>
+                    <div class="insight-item" data-animate="scale-in">
+                        <div class="insight-number">04</div>
+                        <h3>Audit Standards</h3>
+                        <p>Completed comprehensive audit using Republic Services standards, understanding quality control processes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Page 2: Audit Data Analysis -->
+    <main id="audit-page" class="page">
+        <div class="container">
+            <div class="audit-header">
+                <h1>Republic Services Mock Audit Results</h1>
+                <p class="audit-subtitle">Comprehensive material analysis and categorization data from systematic testing</p>
+            </div>
+
+            <!-- Data Summary Cards -->
+            <div class="data-summary">
+                <div class="summary-card">
+                    <h3>OCC Category</h3>
+                    <div class="summary-value">367.89</div>
+                    <div class="summary-label">kg total weight</div>
+                </div>
+                <div class="summary-card">
+                    <h3>Office Paper</h3>
+                    <div class="summary-value">584.22</div>
+                    <div class="summary-label">kg total weight</div>
+                </div>
+                <div class="summary-card">
+                    <h3>ONP Category</h3>
+                    <div class="summary-value">442.86</div>
+                    <div class="summary-label">kg total weight</div>
+                </div>
+                <div class="summary-card">
+                    <h3>Categories</h3>
+                    <div class="summary-value">4</div>
+                    <div class="summary-label">material types</div>
+                </div>
+            </div>
+
+            <!-- Interactive Data Table -->
+            <div class="data-table-container">
+                <div class="table-controls">
+                    <h2>Detailed Audit Data</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">All Categories</button>
+                        <button class="filter-btn" data-category="OCC">OCC</button>
+                        <button class="filter-btn" data-category="OFFICE_PAPER">Office Paper</button>
+                        <button class="filter-btn" data-category="ONP">ONP</button>
+                        <button class="filter-btn" data-category="RESIDUE">Residue</button>
+                    </div>
+                </div>
+                
+                <div class="data-table">
+                    <table id="auditTable">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Material Type</th>
+                                <th>Weight (kg)</th>
+                                <th>Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Data Visualization -->
+            <div class="chart-container">
+                <h2>Material Distribution Analysis</h2>
+                <canvas id="dataChart" width="800" height="400"></canvas>
+            </div>
+
+            <!-- Analysis Insights -->
+            <div class="analysis-section">
+                <h2>Audit Analysis & Insights</h2>
+                <div class="analysis-grid">
+                    <div class="analysis-card">
+                        <h3>OCC Composition</h3>
+                        <p>Old Corrugated Cardboard (OCC) category shows the expected high percentage of corrugated material (268.23 kg) with minimal contamination from other paper types.</p>
+                    </div>
+                    <div class="analysis-card">
+                        <h3>Office Paper Purity</h3>
+                        <p>Office Paper category demonstrates excellent material separation with 562.497 kg of pure office paper and minimal cross-contamination.</p>
+                    </div>
+                    <div class="analysis-card">
+                        <h3>ONP Performance</h3>
+                        <p>Old Newspapers (ONP) category achieved strong purity levels at 420.239 kg with controlled contamination from other paper streams.</p>
+                    </div>
+                    <div class="analysis-card">
+                        <h3>Quality Standards</h3>
+                        <p>Overall audit results demonstrate effective sorting processes meeting Republic Services quality standards for material recovery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

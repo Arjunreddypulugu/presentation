@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Solutions - Internship Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Page 1: Overview -->
+    <div id="overview-page" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Streamlining Operations</span>
+                        <span class="title-line accent">Through Automation</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Two powerful solutions combining data reorganization and barcode generation to enhance productivity and user experience
+                    </p>
+                    <button class="cta-button" data-page="details">
+                        Explore Projects
+                        <span class="button-arrow">→</span>
+                    </button>
+                </div>
+                <div class="hero-visual">
+                    <div class="geometric-pattern">
+                        <div class="dot-grid"></div>
+                        <div class="orange-accent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Overview -->
+        <section class="projects-overview">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="excel">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <span class="icon-text">📊</span>
+                            </div>
+                            <h3 class="card-title">Spare Parts Packager</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Automated conversion tool that transforms spare parts data from system format to customer-preferred format, processing ~100 parts per configuration.
+                            </p>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-number">30+</span>
+                                    <span class="stat-label">Minutes Saved for each rep</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">100+</span>
+                                    <span class="stat-label">Parts Processed per rep</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://excel-with-formula-version3.streamlit.app/" target="_blank" class="external-link">
+                                View Live App
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="barcode">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <span class="icon-text">📱</span>
+                            </div>
+                            <h3 class="card-title">Barcode Generator</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Web-based Code 128 barcode generator deployed on Streamlit Cloud, eliminating setup complexity for inventory and shipping users.
+                            </p>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-number">3-4</span>
+                                    <span class="stat-label">Users Served</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">0</span>
+                                    <span class="stat-label">Setup Time</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://lpn9gbqdhnb4ncbvqqqhmi.streamlit.app/" target="_blank" class="external-link">
+                                View Live App
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page 2: Detailed View -->
+    <div id="details-page" class="page">
+        <section class="details-hero">
+            <div class="container">
+                <h1 class="details-title">Project Deep Dive</h1>
+                <p class="details-subtitle">Comprehensive analysis of challenges, solutions, and outcomes</p>
+            </div>
+        </section>
+
+        <section class="details-content">
+            <div class="container">
+                <div class="projects-split">
+                    <!-- Excel Project Detail -->
+                    <div class="project-detail" data-project="excel">
+                        <div class="project-header">
+                            <h2 class="project-title">Excel Spare Parts Data Reorganizer</h2>
+                            <div class="project-tech">Python/Pandas • Web-based Tool</div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3 class="section-heading">The Challenge</h3>
+                            <div class="challenge-list">
+                                <div class="challenge-item">
+                                    <span class="challenge-icon">😟</span>
+                                    <p>Customers found system format difficult to interpret due to part duplications</p>
+                                </div>
+                                <div class="challenge-item">
+                                    <span class="challenge-icon">🔄</span>
+                                    <p>Format mismatch: System organizes by machines, customers prefer consolidated lists</p>
+                                </div>
+                                <div class="challenge-item">
+                                    <span class="challenge-icon">⏱️</span>
+                                    <p>Manual bottleneck: Faizan manually reformatted Excel files for each request</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3 class="section-heading">The Solution</h3>
+                            <div class="solution-features">
+                                <div class="feature-item">
+                                    <span class="feature-bullet"></span>
+                                    <p>Automated conversion from system format to customer-preferred format</p>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-bullet"></span>
+                                    <p>Eliminates duplicate entries and aggregates quantities across machines</p>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-bullet"></span>
+                                    <p>Processes ~100 different parts across varying configurations</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3 class="section-heading">Impact & Results</h3>
+                            <div class="metrics-grid">
+                                <div class="metric-card">
+                                    <div class="metric-value" data-value="30">0</div>
+                                    <div class="metric-label">Minutes Saved Per Request</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-value" data-value="24">0</div>
+                                    <div class="metric-label">Max Annual Hours Saved</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-link">
+                            <a href="https://e8pytcsx85z2czbhyk9jnp.streamlit.app/" target="_blank" class="btn btn--primary">
+                                Launch Application
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Barcode Project Detail -->
+                    <div class="project-detail" data-project="barcode">
+                        <div class="project-header">
+                            <h2 class="project-title">Barcode Generator Web Application</h2>
+                            <div class="project-tech">Code 128 • Streamlit Cloud</div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3 class="section-heading">The Challenge</h3>
+                            <div class="challenge-list">
+                                <div class="challenge-item">
+                                    <span class="challenge-icon">💻</span>
+                                    <p>Original script required Python environment setup on each user's system</p>
+                                </div>
+                                <div class="challenge-item">
+                                    <span class="challenge-icon">🚫</span>
+                                    <p>Accessibility gap: 3-4 users needed simple, immediate access</p>
+                                </div>
+                                <div class="challenge-item">
+                                    <span class="challenge-icon">🔧</span>
+                                    <p>Complex installation barriers limited user adoption</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3 class="section-heading">The Solution</h3>
+                            <div class="solution-features">
+                                <div class="feature-item">
+                                    <span class="feature-bullet"></span>
+                                    <p>Converted Python script into accessible web application</p>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-bullet"></span>
+                                    <p>Deployed on Streamlit Cloud for universal access</p>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-bullet"></span>
+                                    <p>Eliminated setup requirements and technical barriers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3 class="section-heading">Impact & Results</h3>
+                            <div class="metrics-grid">
+                                <div class="metric-card">
+                                    <div class="metric-value" data-value="4">0</div>
+                                    <div class="metric-label">Users Now Served</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-value" data-value="100">0</div>
+                                    <div class="metric-label">% Setup Time Eliminated</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-link">
+                            <a href="https://lpn9gbqdhnb4ncbvqqqhmi.streamlit.app/" target="_blank" class="btn btn--primary">
+                                Launch Application
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

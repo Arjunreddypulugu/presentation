@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Normalization Project - Internship Presentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Database Normalization</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Overview</a></li>
+                <li><a href="#current-state" class="nav-link">Current State</a></li>
+                <li><a href="#methodology" class="nav-link">Methodology</a></li>
+                <li><a href="#outcomes" class="nav-link">Outcomes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page 1: Project Overview & Current State -->
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Database Normalization Project</h1>
+                <p class="hero-subtitle">Transforming PowerAppsDatabase for Enhanced Performance & Integrity</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="120">0</span>
+                        <span class="stat-label">Database Tables</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="6">0</span>
+                        <span class="stat-label">Table Categories</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="overview" class="section">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>Purpose</h3>
+                    <p>Normalize the existing PowerAppsDatabase to eliminate redundancy, improve data integrity, and enhance query performance across all operational systems.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Scope</h3>
+                    <p>Complete database restructure affecting 120+ tables across contract management, equipment tracking, employee management, and financial systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Database State -->
+    <section id="current-state" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Current Database State</h2>
+            <div class="database-visualization">
+                <div class="database-overview">
+                    <h3>PowerAppsDatabase Structure</h3>
+                    <div class="table-categories">
+                        <div class="category-item" data-category="Contract Management">
+                            <div class="category-header">
+                                <span class="category-name">Contract Management</span>
+                                <span class="category-count">32 tables</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-progress" data-width="40"></div>
+                            </div>
+                        </div>
+                        <div class="category-item" data-category="Equipment Tracking">
+                            <div class="category-header">
+                                <span class="category-name">Equipment Tracking</span>
+                                <span class="category-count">15 tables</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-progress" data-width="19"></div>
+                            </div>
+                        </div>
+                        <div class="category-item" data-category="Employee Management">
+                            <div class="category-header">
+                                <span class="category-name">Employee Management</span>
+                                <span class="category-count">12 tables</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-progress" data-width="15"></div>
+                            </div>
+                        </div>
+                        <div class="category-item" data-category="Financial Management">
+                            <div class="category-header">
+                                <span class="category-name">Financial Management</span>
+                                <span class="category-count">10 tables</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-progress" data-width="12"></div>
+                            </div>
+                        </div>
+                        <div class="category-item" data-category="Project Management">
+                            <div class="category-header">
+                                <span class="category-name">Project Management</span>
+                                <span class="category-count">8 tables</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-progress" data-width="10"></div>
+                            </div>
+                        </div>
+                        <div class="category-item" data-category="System Management">
+                            <div class="category-header">
+                                <span class="category-name">System Management</span>
+                                <span class="category-count">3 tables</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-progress" data-width="4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sample Tables Showcase -->
+            <div class="tables-showcase">
+                <h3>Key Tables Analysis</h3>
+                <div class="tables-grid">
+                    <div class="table-card">
+                        <div class="table-header">
+                            <h4>EquipmentDB</h4>
+                            <span class="severity-badge high">High Priority</span>
+                        </div>
+                        <p class="table-description">All machine info including specifications</p>
+                        <div class="table-columns">
+                            <span class="column-tag">CustomerID</span>
+                            <span class="column-tag">SerialNumber</span>
+                            <span class="column-tag">Manufacturer</span>
+                            <span class="column-tag">Model</span>
+                            <span class="column-tag problem">Specifications1-50</span>
+                            <span class="column-tag">InstallDate</span>
+                        </div>
+                        <div class="table-issues">
+                            <span class="issue-tag">1NF Violation</span>
+                            <span class="issue-tag">Repeating Groups</span>
+                        </div>
+                    </div>
+
+                    <div class="table-card">
+                        <div class="table-header">
+                            <h4>ContractsMainDetails</h4>
+                            <span class="severity-badge high">high Priority</span>
+                        </div>
+                        <p class="table-description">Main contract project tracking</p>
+                        <div class="table-columns">
+                            <span class="column-tag">CustomerIDAcu</span>
+                            <span class="column-tag">Account</span>
+                            <span class="column-tag">Reference</span>
+                            <span class="column-tag problem">Project_Manager</span>
+                            <span class="column-tag problem">PMEmail</span>
+                            <span class="column-tag">Equipment</span>
+                        </div>
+                        <div class="table-issues">
+                            <span class="issue-tag">Data Redundancy</span>
+                            <span class="issue-tag">Mixed Responsibilities</span>
+                        </div>
+                    </div>
+
+                    <div class="table-card">
+                        <div class="table-header">
+                            <h4>TimeClock</h4>
+                            <span class="severity-badge medium">Medium Priority</span>
+                        </div>
+                        <p class="table-description">Employee time tracking for tickets</p>
+                        <div class="table-columns">
+                            <span class="column-tag">TicketNumber</span>
+                            <span class="column-tag">UserName</span>
+                            <span class="column-tag">PrestigeID</span>
+                            <span class="column-tag problem">UserAcuID</span>
+                            <span class="column-tag">CostCode</span>
+                            <span class="column-tag">TimeWorked</span>
+                        </div>
+                        <div class="table-issues">
+                            <span class="issue-tag">2NF Violation</span>
+                            <span class="issue-tag">Partial Dependencies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2: Approach & Expected Outcomes -->
+    
+    <!-- Normalization Methodology -->
+    <section id="methodology" class="section">
+        <div class="container">
+            <h2 class="section-title">Normalization Methodology</h2>
+            <div class="methodology-steps">
+                <div class="step-card">
+                    <div class="step-number">1NF</div>
+                    <div class="step-content">
+                        <h3>First Normal Form</h3>
+                        <p>Eliminate repeating groups and ensure atomic values</p>
+                        <ul class="step-actions">
+                            <li>Split Specifications1-50 into separate table</li>
+                            <li>Remove multi-valued fields</li>
+                            <li>Ensure unique primary keys</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2NF</div>
+                    <div class="step-content">
+                        <h3>Second Normal Form</h3>
+                        <p>Remove partial dependencies on composite keys</p>
+                        <ul class="step-actions">
+                            <li>Separate user data from time tracking</li>
+                            <li>Create proper foreign key relationships</li>
+                            <li>Remove partial dependencies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3NF</div>
+                    <div class="step-content">
+                        <h3>Third Normal Form</h3>
+                        <p>Eliminate transitive dependencies</p>
+                        <ul class="step-actions">
+                            <li>Separate customer data from contracts</li>
+                            <li>Create lookup tables</li>
+                            <li>Remove transitive dependencies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expected Outcomes -->
+    <section id="outcomes" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Expected Benefits & Outcomes</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Data Integrity</h3>
+                    <div class="benefit-improvement">85% reduction</div>
+                    <p>in data inconsistencies through proper referential integrity and constraints</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💾</div>
+                    <h3>Storage Efficiency</h3>
+                    <div class="benefit-improvement">40% reduction</div>
+                    <p>in storage requirements through elimination of redundant data</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="40"></div>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Query Performance</h3>
+                    <div class="benefit-improvement">60% improvement</div>
+                    <p>in query speed through optimized table structure and indexing</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="60"></div>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔧</div>
+                    <h3>Maintainability</h3>
+                    <div class="benefit-improvement">70% easier</div>
+                    <p>maintenance through clear separation of concerns and relationships</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="70"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Approach -->
+            <div class="approach-section">
+                <h3>Technical Approach & Timeline</h3>
+                <div class="approach-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 1: Analysis & Planning</h4>
+                            <p>Complete database audit and normalization planning</p>
+                            <span class="timeline-duration">Week 1-2</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 2: 1NF Implementation</h4>
+                            <p>Eliminate repeating groups and ensure atomic values</p>
+                            <span class="timeline-duration">Week 3-4</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 3: 2NF & 3NF Implementation</h4>
+                            <p>Remove dependencies and optimize relationships</p>
+                            <span class="timeline-duration">Week 5-6</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 4: Testing & Deployment</h4>
+                            <p>Comprehensive testing and gradual rollout</p>
+                            <span class="timeline-duration">Week 7-8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

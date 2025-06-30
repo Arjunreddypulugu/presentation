@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Wins – Automation Opportunities at VDRS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero ----------------------------------------------------->
+    <header id="hero" class="hero flex flex-col items-center justify-center">
+      <div class="container text-center hero__content reveal">
+        <h1 class="hero__title">Quick Wins: Discovering Automation Opportunities internally</h1>
+        <p class="hero__subtitle mt-8">
+          Experienced employees across Sales, Service, Project Management,
+          Inventory &amp; Logistics are key to uncovering high-impact automation
+          opportunities.
+        </p>
+      </div>
+    </header>
+
+    <!-- Quick Wins Framework ------------------------------------->
+    <section id="framework" class="section section--framework">
+      <div class="container">
+        <h2 class="section__title reveal">Quick Wins Framework</h2>
+        <p class="section__intro reveal">
+          A simple four-step approach to capture ideas, score impact, and deploy
+          fast.
+        </p>
+        <ol id="frameworkSteps" class="framework-list"></ol>
+      </div>
+    </section>
+
+    <!-- Embedded application data in JSON format -->
+    <script id="app-data" type="application/json">
+      {"departments": [
+        {"name": "Sales", "color": "#2E8B57", "opportunities": [
+          {"title": "Lead Qualification Automation", "description": "Automate lead scoring based on facility type, size, and recycling volume", "timeSaving": "30 minutes per lead", "painPoint": "Manual research and qualification of recycling facility prospects"},
+          {"title": "Customer Communication", "description": "Automated follow-up sequences and proposal generation", "timeSaving": "2 hours per proposal", "painPoint": "Repetitive email drafting and proposal formatting"},
+          {"title": "Sales Reporting", "description": "Automated CRM data sync and pipeline reports", "timeSaving": "4 hours weekly", "painPoint": "Manual data entry and report generation"}]},
+        {"name": "Service", "color": "#4682B4", "opportunities": [
+          {"title": "Ticket Routing", "description": "AI-powered ticket classification and technician assignment", "timeSaving": "15 minutes per ticket", "painPoint": "Manual ticket review and assignment decisions"},
+          {"title": "Parts Prediction", "description": "Predictive analytics for spare parts requirements", "timeSaving": "1 hour per service call", "painPoint": "Multiple trips due to missing parts"},
+          {"title": "Schedule Optimization", "description": "Automated route planning and resource allocation", "timeSaving": "30 minutes daily", "painPoint": "Manual scheduling conflicts and inefficient routing"}]},
+        {"name": "Project Management", "color": "#20B2AA", "opportunities": [
+          {"title": "Resource Allocation", "description": "AI-optimized PM and subcontractor assignments", "timeSaving": "45 minutes per project", "painPoint": "Manual resource conflicts and over-allocation"},
+          {"title": "Timeline Tracking", "description": "Automated project milestone monitoring and alerts", "timeSaving": "2 hours weekly", "painPoint": "Manual status updates and progress tracking"},
+          {"title": "Cost Monitoring", "description": "Real-time expense tracking and budget alerts", "timeSaving": "3 hours per project", "painPoint": "Late discovery of cost overruns"}]},
+        {"name": "Inventory Management", "color": "#32CD32", "opportunities": [
+          {"title": "Stock Monitoring", "description": "Automated inventory alerts and reorder points", "timeSaving": "1 hour daily", "painPoint": "Manual stock counts and shortage surprises"},
+          {"title": "Location Tracking", "description": "Barcode scanning and real-time location updates", "timeSaving": "30 minutes per search", "painPoint": "Time lost searching for parts in warehouse"},
+          {"title": "Demand Forecasting", "description": "Predictive analytics for seasonal and equipment-specific needs", "timeSaving": "4 hours monthly", "painPoint": "Overstock of slow-moving items, stockouts of critical parts"}]},
+        {"name": "Logistics", "color": "#4169E1", "opportunities": [
+          {"title": "Route Optimization", "description": "AI-powered delivery route planning with constraints", "timeSaving": "1 hour per delivery", "painPoint": "Inefficient routes and delivery delays"},
+          {"title": "Documentation", "description": "Automated BOL generation and compliance tracking", "timeSaving": "20 minutes per shipment", "painPoint": "Manual paperwork and compliance errors"},
+          {"title": "Load Planning", "description": "Automated equipment packaging and space optimization", "timeSaving": "45 minutes per load", "painPoint": "Suboptimal load configuration and damage risk"}]}],
+        "statistics": [
+          {"value": "87%", "description": "of workers say automation saves them time on tedious tasks"},
+          {"value": "60%", "description": "believe automation helps them perform jobs better and faster"},
+          {"value": "31%", "description": "still rely on manual processes that could be automated"},
+          {"value": "5-8x", "description": "faster discovery of automation opportunities with employee insights"}],
+        "quickWinsFramework": [
+          {"step": "1", "title": "Employee Interviews", "description": "Talk to experienced staff about daily frustrations and repetitive tasks"},
+          {"step": "2", "title": "Process Mapping", "description": "Document current workflows and identify bottlenecks"},
+          {"step": "3", "title": "Opportunity Scoring", "description": "Rank automation opportunities by impact and implementation ease"},
+          {"step": "4", "title": "Quick Implementation", "description": "Start with high-value, low-complexity automation wins"}]
+      }
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

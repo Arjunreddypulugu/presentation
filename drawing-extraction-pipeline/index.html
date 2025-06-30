@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Drawing Data Extraction Pipeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <h1 class="hero-title">Automated Drawing Data Extraction & Consolidation Pipeline</h1>
+                <p class="hero-subtitle">Transforming 20,000+ Engineering Drawings into Structured Data</p>
+                <div class="hero-metrics">
+                    <div class="metric-item">
+                        <span class="metric-number" data-target="20000">0</span>
+                        <span class="metric-label">Drawings Processed</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-number" data-target="300">0</span>
+                        <span class="metric-label">Training Images</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-text">Years</span>
+                        <span class="metric-label">of Manual Work Automated</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">The Challenge</h2>
+                <p class="section-subtitle">Unlocking Hidden Data from Legacy Engineering Drawings</p>
+            </div>
+            <div class="problem-content">
+                <div class="problem-description fade-in">
+                    <p>Vast amounts of valuable part information were locked in legacy engineering drawings, making it difficult and time-consuming to access, search, or analyze. Manual extraction was impossible at this scale—automation was the only viable solution.</p>
+                </div>
+                <div class="pain-points">
+                    <div class="pain-point fade-in" style="--delay: 0.1s">
+                        <div class="pain-icon">🔒</div>
+                        <h3>Hidden Data</h3>
+                        <p>20,000+ legacy drawings with inaccessible information</p>
+                    </div>
+                    <div class="pain-point fade-in" style="--delay: 0.2s">
+                        <div class="pain-icon">🔍</div>
+                        <h3>No Search Capability</h3>
+                        <p>No centralized, searchable database existed</p>
+                    </div>
+                    <div class="pain-point fade-in" style="--delay: 0.3s">
+                        <div class="pain-icon">⏱️</div>
+                        <h3>Time Prohibitive</h3>
+                        <p>Manual processes would take years to complete</p>
+                    </div>
+                    <div class="pain-point fade-in" style="--delay: 0.4s">
+                        <div class="pain-icon">📈</div>
+                        <h3>Business Impact</h3>
+                        <p>Critical business data remained inaccessible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Section -->
+    <section id="implementation" class="implementation section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">The Solution</h2>
+                <p class="section-subtitle">Step-by-step technical implementation process</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in" style="--delay: 0.1s">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Batch Conversion</h3>
+                        <p>Converted ~20,000 engineering drawings (DWGs) to PDFs using DocuFreezer for standardized processing</p>
+                        <div class="tech-tag">DocuFreezer</div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in" style="--delay: 0.2s">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Model Training</h3>
+                        <p>Labeled 300+ drawings using Label Studio and fine-tuned YOLO V8M model for precise table detection</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">YOLO V8M</span>
+                            <span class="tech-tag">Label Studio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in" style="--delay: 0.3s">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>Automated Detection</h3>
+                        <p>Ran trained model on all PDFs to generate JSON files with precise bounding box coordinates</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in" style="--delay: 0.4s">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3>Data Extraction</h3>
+                        <p>Developed Python pipeline using coordinates to extract table and metadata content from each drawing</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PDF Libraries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in" style="--delay: 0.5s">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h3>Data Consolidation</h3>
+                        <p>Consolidated all part data into master Excel file with drawing numbers, SKUs, serials, and customer info</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Excel Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes Section -->
+    <section id="outcomes" class="outcomes section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Outcomes & Impact</h2>
+                <p class="section-subtitle">Measurable results and business transformation</p>
+            </div>
+            <div class="outcomes-grid">
+                <div class="outcome-card fade-in" style="--delay: 0.1s">
+                    <div class="outcome-metric">20,000+</div>
+                    <div class="outcome-description">Unstructured drawings transformed into searchable database</div>
+                    <div class="outcome-impact">Data Accessibility</div>
+                </div>
+                <div class="outcome-card fade-in" style="--delay: 0.2s">
+                    <div class="outcome-metric">Years</div>
+                    <div class="outcome-description">Of manual work automated into hours</div>
+                    <div class="outcome-impact">Time Savings</div>
+                </div>
+                <div class="outcome-card fade-in" style="--delay: 0.3s">
+                    <div class="outcome-metric">3 Teams</div>
+                    <div class="outcome-description">Sales, service, and engineering now have instant access</div>
+                    <div class="outcome-impact">Business Value</div>
+                </div>
+                <div class="outcome-card fade-in" style="--delay: 0.4s">
+                    <div class="outcome-metric">Scalable</div>
+                    <div class="outcome-description">Pipeline can process new drawings automatically</div>
+                    <div class="outcome-impact">Future-Ready</div>
+                </div>
+            </div>
+            <div class="business-value fade-in">
+                <h3>Business Value Delivered</h3>
+                <ul class="value-list">
+                    <li>Instant access to comprehensive part lists</li>
+                    <li>Faster customer quoting processes</li>
+                    <li>Improved inventory management</li>
+                    <li>Enhanced customer support capabilities</li>
+                    <li>Streamlined engineering workflows</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Engineering Excellence. Automated Drawing Data Extraction Pipeline.</p>
+                <p>Demonstrating advanced machine learning and automation capabilities.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Drive Organization & AMI Updation - Van Dyk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page 1: Project Overview -->
+    <div id="page1" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title animate-fade-in">
+                        <span class="title-line">G drive organization</span>
+                        <span class="title-line">& AMI updation</span>
+                    </h1>
+                    <div class="hero__subtitle animate-fade-in delay-1">
+                        Streamlining data management and establishing a single source of truth
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What & Why Section -->
+        <section class="overview">
+            <div class="container">
+                <div class="overview__grid">
+                    <div class="card what-card animate-slide-up">
+                        <div class="card__header">
+                            <h3 class="card__title">What</h3>
+                        </div>
+                        <div class="card__body">
+                            <p>To organise folders for each customer in the G-drive and to update AMI with their respective machine data.</p>
+                        </div>
+                    </div>
+                    <div class="card why-card animate-slide-up delay-2">
+                        <div class="card__header">
+                            <h3 class="card__title">Why</h3>
+                        </div>
+                        <div class="card__body">
+                            <p>We update the AMI to establish a single source of truth—a consolidated history of all machines sold to every customer. The organized G-drive structure empowers our service technicians to quickly navigate to the right folders and files, streamlining troubleshooting and support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Section -->
+        <section class="carousel-section">
+            <div class="container">
+                <h2 class="section-title animate-fade-in">Project Implementation</h2>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Carousel items will be populated by JavaScript -->
+                        </div>
+                        <button class="carousel-btn carousel-btn--prev" id="prevBtn">
+                            <span class="carousel-btn__icon">‹</span>
+                        </button>
+                        <button class="carousel-btn carousel-btn--next" id="nextBtn">
+                            <span class="carousel-btn__icon">›</span>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators" id="carouselIndicators">
+                        <!-- Indicators will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customers & Tasks Section -->
+        <section class="data-section">
+            <div class="container">
+                <div class="toggle-tabs">
+                    <button class="tab-btn active" data-tab="customers">Customers</button>
+                    <button class="tab-btn" data-tab="tasks">Tasks</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="customers" class="tab-pane active">
+                        <div class="data-grid" id="customersGrid">
+                            <!-- Customers will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    <div id="tasks" class="tab-pane">
+                        <div class="data-list" id="tasksList">
+                            <!-- Tasks will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page 2: Detailed Implementation -->
+    <div id="page2" class="page">
+        <!-- Process Flow Section -->
+        <section class="process-flow">
+            <div class="container">
+                <h1 class="page-title animate-fade-in">Implementation Process</h1>
+                
+                <div class="flow-diagram">
+                    <div class="flow-step animate-slide-up">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Analysis & Planning</h3>
+                            <p>Assessed current G-drive structure and AMI database requirements</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step animate-slide-up delay-1">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Folder Organization</h3>
+                            <p>Created systematic folder structure for each customer and machine type</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step animate-slide-up delay-2">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Data Migration</h3>
+                            <p>Moved manuals, drawings, and documentation to appropriate folders</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step animate-slide-up delay-3">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>AMI Integration</h3>
+                            <p>Updated AMI database with machine specifications and customer data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="detail-card animate-fade-in">
+                        <h3>Benefits Achieved</h3>
+                        <ul>
+                            <li>Reduced file search time by 70%</li>
+                            <li>Established single source of truth</li>
+                            <li>Improved technician efficiency</li>
+                            <li>Enhanced customer support quality</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card animate-fade-in delay-1">
+                        <h3>Key Metrics</h3>
+                        <ul>
+                            <li>10 major customers organized</li>
+                            <li>7 core tasks completed</li>
+                            <li>100+ machine records updated</li>
+                            <li>Systematic documentation achieved</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="back-link">
+                    <a href="#" class="btn btn--outline" data-page="page1">← Back to Overview</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

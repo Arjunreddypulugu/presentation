@@ -1,0 +1,97 @@
+{
+  "project_data": {
+    "project_name": "Web-based Timeclock Application for Subcontractor Workforce Management",
+    "technologies": [
+      "JavaScript",
+      "TypeScript",
+      "SQL Server",
+      "Azure",
+      "GPS API"
+    ],
+    "scale": {
+      "subcontractors": 100,
+      "projects": "400-500",
+      "verification_radius": "0.4km",
+      "time_saved_weekly": 333
+    },
+    "features": [
+      "Unique Base64-encoded links",
+      "Photo capture & upload to Azure",
+      "GPS location validation",
+      "Real-time database integration",
+      "Dual verification system"
+    ],
+    "outcomes": {
+      "trust_restoration": "Photo and location verification",
+      "time_savings": "333 hours weekly",
+      "accuracy_improvement": "Eliminated human error",
+      "operational_efficiency": "100+ representatives freed",
+      "cost_control": "Improved project profitability",
+      "scalability": "Handles floating workforce"
+    }
+  },
+  "color_scheme": {
+    "primary_navy": "#1B365D",
+    "secondary_navy": "#2E5A8A",
+    "light_navy": "#4A79A4",
+    "primary_orange": "#FF6B35",
+    "secondary_orange": "#FF8C42",
+    "light_orange": "#FFB366",
+    "white": "#FFFFFF",
+    "light_gray": "#F8F9FA",
+    "medium_gray": "#6C757D",
+    "dark_text": "#212529"
+  },
+  "metrics": {
+    "metric": [
+      "Subcontractors",
+      "Active Projects",
+      "Time Saved (hrs/week)",
+      "Accuracy Improvement",
+      "Representatives Freed"
+    ],
+    "value": [
+      100,
+      450,
+      333,
+      95,
+      100
+    ],
+    "category": [
+      "Scale",
+      "Scale",
+      "Efficiency",
+      "Quality",
+      "Efficiency"
+    ]
+  },
+  "timeline": {
+    "phase": [
+      "Planning & Analysis",
+      "System Design",
+      "Base64 Link Generation",
+      "Photo Verification",
+      "GPS Integration",
+      "Database Integration",
+      "Testing & Deployment"
+    ],
+    "duration_weeks": [
+      2,
+      3,
+      2,
+      3,
+      2,
+      2,
+      2
+    ],
+    "status": [
+      "Completed",
+      "Completed",
+      "Completed",
+      "Completed",
+      "Completed",
+      "Completed",
+      "Completed"
+    ]
+  }
+}

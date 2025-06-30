@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeclock Presentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .btn-cta {
+            display: inline-block;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            background-color: #FF6B35;
+            color: white !important;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Web-based Timeclock Application</h1>
+                <p class="hero-subtitle">Dual verification system with photo capture and GPS validation for subcontractor workforce management</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Subcontractors</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="450">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                </div>
+                <div class="hero-tech">
+                    <a href="https://subcontractor-timeclock-app-fcc6hth4fjgqgdhn.eastus2-01.azurewebsites.net/?sc=MAAwADQAOAAxADAAfABWADAAMAAxADMAMQAgACAAIAAgAA==" target="_blank" class="btn-cta">View App</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section id="challenge" class="challenge-section">
+        <div class="container">
+            <h2 class="section-title">The Challenge</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-icon">🛡️</div>
+                    <h3>Trust & Accountability</h3>
+                    <p>Concerns about timesheet accuracy and proxy clocking</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon">⚡</div>
+                    <h3>Process Efficiency</h3>
+                    <p>Manual timesheet collection and transmission bottleneck</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon">📈</div>
+                    <h3>Scalability Challenge</h3>
+                    <p>Floating workforce couldn't access internal Power Apps or receive individual credentials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="workflow" class="workflow-section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="workflow-container">
+                <div class="workflow-step" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Link Generation</h3>
+                        <p>System generates unique Base64-encoded link for each subcontractor-project combination</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>GPS Validation</h3>
+                        <p>Real-time location verification within 0.4km radius of project site</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Access & Photo</h3>
+                        <p>Users access the link and capture a photo of themselves</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Data Storage</h3>
+                        <p>Verified timesheet data stored with immutable project and contractor IDs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results-section">
+        <div class="container">
+            <h2 class="section-title">Results & Impact</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-metric">100%</div>
+                    <div class="result-label">Trust Restoration</div>
+                    <div class="result-description">Photo and location verification addressed primary pain point</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-metric">95%+</div>
+                    <div class="result-label">Accuracy Enhancement</div>
+                    <div class="result-description">Eliminated human error in timesheet transcription</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-metric">100+</div>
+                    <div class="result-unit">reps</div>
+                    <div class="result-label">Operational Efficiency</div>
+                    <div class="result-description">No longer need to manually collect and transmit timesheets</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Highlights Section -->
+    <section id="technical" class="technical-section">
+        <div class="container">
+            <h2 class="section-title">Highlights</h2>
+            <div class="technical-content" style="display: flex; justify-content: center;">
+                <div class="technical-features">
+                    <div class="feature-item">
+                        <h3>Development Approach</h3>
+                        <p>Collaborative solution developed through brainstorming sessions with the team</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Innovative Solutions</h3>
+                        <p>Unique Base64 link system providing secure, scalable access without individual credentials</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Scalability Achievement</h3>
+                        <p>System handles floating workforce across hundreds of concurrent projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Timeclock Application Project. Built with JavaScript, TypeScript, SQL Server, and Azure.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html> 
