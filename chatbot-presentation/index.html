@@ -1037,6 +1037,25 @@
         gap: var(--space-16);
       }
 
+      .launch-demo-style {
+        display: flex;
+        align-items: center;
+        gap: var(--space-8);
+        background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+        border: none;
+        color: white;
+        padding: var(--space-12) var(--space-24);
+        border-radius: var(--radius-base);
+        font-weight: var(--font-weight-semibold);
+        cursor: pointer;
+        transition: all var(--duration-fast) var(--ease-standard);
+      }
+
+      .launch-demo-style:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-primary);
+      }
+
       .demo-btn {
         display: flex;
         align-items: center;
@@ -1590,7 +1609,7 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="https://floppy-facts-appear.loca.lt/" target="_blank" class="btn btn--primary demo-btn" data-project="sql">
+                            <a href="https://floppy-facts-appear.loca.lt/" target="_blank" class="btn btn--primary launch-demo-style" data-project="sql">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <polygon points="5,3 19,12 5,21"/>
                                 </svg>
