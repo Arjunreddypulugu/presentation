@@ -230,7 +230,7 @@ class InteractionManager {
     }
 
     init() {
-        this.setupDemoButtons();
+        // this.setupDemoButtons();
         this.setupCardInteractions();
         this.setupNavbarScrollEffect();
         this.addNotificationStyles();
@@ -341,91 +341,6 @@ class InteractionManager {
             `;
             document.head.appendChild(style);
         }
-    }
-
-    setupDemoButtons() {
-        this.demoButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                this.handleDemoClick(e);
-            });
-            button.addEventListener('mouseenter', this.handleButtonHover.bind(this));
-            button.addEventListener('mouseleave', this.handleButtonLeave.bind(this));
-        });
-    }
-
-    handleDemoClick(e) {
-        const button = e.currentTarget;
-        const project = button.getAttribute('data-project') || 'sql';
-        
-        // Add click animation
-        button.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-            button.style.transform = '';
-        }, 150);
-
-        // Show demo notification
-        this.showDemoNotification(project);
-    }
-
-    showDemoNotification(project) {
-        // Remove existing notification if any
-        const existingNotification = document.querySelector('.demo-notification');
-        if (existingNotification) {
-            existingNotification.remove();
-        }
-
-        const notification = document.createElement('div');
-        notification.className = 'demo-notification';
-        
-        const projectTitle = project === 'sql' ? 'SQL Database Chatbot' : 'Document QA Chatbot';
-        const projectDescription = project === 'sql' 
-            ? 'Our SQL chatbot prototype allows users to query databases using natural language. Currently in development with advanced NLP capabilities.'
-            : 'Our Document QA chatbot helps technicians find answers from technical manuals instantly. Coming soon with hierarchical document search.';
-        
-        notification.innerHTML = `
-            <button class="notification-close" onclick="this.parentElement.remove()">&times;</button>
-            <div class="notification-content">
-                <div class="notification-icon">🚀</div>
-                <h4>${projectTitle} Demo</h4>
-                <p>${projectDescription}</p>
-                <div class="notification-actions">
-                    <button class="btn btn--primary btn--sm" onclick="this.parentElement.parentElement.parentElement.remove()">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"/>
-                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
-                        </svg>
-                        Got it!
-                    </button>
-                    <button class="btn btn--outline btn--sm" onclick="window.scrollTo({top: document.getElementById('timeline').offsetTop - 80, behavior: 'smooth'}); this.parentElement.parentElement.parentElement.remove();">
-                        View Timeline
-                    </button>
-                </div>
-            </div>
-        `;
-
-        document.body.appendChild(notification);
-        
-        // Auto-remove after 8 seconds
-        setTimeout(() => {
-            if (notification.parentElement) {
-                notification.style.animation = 'notificationSlideIn 0.3s ease-out reverse';
-                setTimeout(() => {
-                    notification.remove();
-                }, 300);
-            }
-        }, 8000);
-    }
-
-    handleButtonHover(e) {
-        const button = e.currentTarget;
-        button.style.transform = 'translateY(-2px) scale(1.05)';
-    }
-
-    handleButtonLeave(e) {
-        const button = e.currentTarget;
-        button.style.transform = '';
     }
 
     setupCardInteractions() {
