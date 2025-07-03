@@ -208,11 +208,6 @@ const presentations = {
                             <h2 class="section-title">The Challenge</h2>
                             <div class="challenges-grid">
                                 <div class="challenge-card">
-                                    <div class="challenge-icon">🛡️</div>
-                                    <h3>Trust & Accountability</h3>
-                                    <p>Eliminated concerns about timesheet accuracy and proxy clocking</p>
-                                </div>
-                                <div class="challenge-card">
                                     <div class="challenge-icon">⚡</div>
                                     <h3>Process Efficiency</h3>
                                     <p>Removed manual timesheet collection and transmission bottleneck</p>
@@ -221,6 +216,11 @@ const presentations = {
                                     <div class="challenge-icon">📈</div>
                                     <h3>Scalability Challenge</h3>
                                     <p>Floating workforce couldn't access internal Power Apps or receive individual credentials</p>
+                                </div>
+                                <div class="challenge-card">
+                                    <div class="challenge-icon">🛡️</div>
+                                    <h3>Trust & Accountability</h3>
+                                    <p>Eliminated concerns about timesheet accuracy and proxy clocking</p>
                                 </div>
                             </div>
                         </div>
@@ -1210,7 +1210,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 function animateHeroDates() {
-    const dateTarget = 'Jan 6 - July 3';
+    const dateTarget = 'Jan 6 - Jul 3';
     const dateEl = document.getElementById('hero-dates-rolling');
     if (dateEl) {
         let current = '';
